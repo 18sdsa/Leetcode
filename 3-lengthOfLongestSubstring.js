@@ -1,4 +1,4 @@
-var s = "pwwkew";
+var s = "pwwkesadasfasfajkfhkashfhdskjfhjsadfgsduagfusdgfygsdifgsiufhudhFIHfhouahfdhfluhsadfhsadifhlsaudhlsdhglsahglsahgasdhgshdglsdghslghslhgw";
 
 var lengthOfLongestSubstring = function(s) {
     var set = new Set();
