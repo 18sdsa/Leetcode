@@ -2,7 +2,10 @@ var s = "PAYPALISHIRING";
 var numRows = 3;
 
 /**
- * PAYPALISHIRING 
+ * PAYP
+ *      ALIS
+ *           HIRI
+ *              NG 
  * 
  * PAHNAPLSIIGYIR
  * @param {*} s 
