@@ -20,7 +20,7 @@ var merge = function(arr,L,M,R){
 
     var a = 0;//left
     var b = 0;//right
-    var c = 0;//arr
+    var c = 0;//arr  
 
 
     while(a < left_size && b < right_size){
