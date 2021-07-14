@@ -46,19 +46,51 @@ bool InsertList(LinkList &L, int i, int e)
     }
 }
 
+//头插法
+LinkList HeadInsert(LinkList &L)
+{
+    LNode *s;
+    int x;
+    scanf("%d",&x);
+    while(x != 999)
+    {
+        s = (LNode *)malloc(sizeof(LNode));
+        s->data = x;
+        s->next = L->next;
+        L->next = s;
+        scanf("%d",&x);
+    }
+    return L;
+}
+
+//尾插
+LinkList TailInsert(LinkList &L)
+{
+    LNode *s = L;
+    LNode *r = L;
+    int x;
+    scanf("%d",&x);
+    while(x != 999)
+    {
+        s = (LNode *)malloc(sizeof(LNode));
+        s->data = x;
+        r->next = s;
+        r = s;//尾指针后移
+        scanf("%d",&x);
+    }
+    r->next = NULL;
+    return L;
+}
 int main()
 {
     LinkList L;
     InitList(L);
-    InsertList(L,1,1);
-    InsertList(L,2,2);
-    InsertList(L,3,3);
-    InsertList(L,4,4);
-    InsertList(L,5,5);
-    InsertList(L,6,6);
+    //HeadInsert(L);
+    TailInsert(L);
     LNode *p = L;
-    while(p->next != NULL)
+    while(p != NULL)
     {
         printf("%d\n",p->data);
+        p = p->next;
     }
 }
