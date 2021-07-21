@@ -13,7 +13,7 @@ void InitStack(SqStack &S)
     S.top = -1;
 }
 
-//进栈
+//进栈.
 bool Push(SqStack &S,int x)
 {
     if(S.top == MAXSIZE -1)
